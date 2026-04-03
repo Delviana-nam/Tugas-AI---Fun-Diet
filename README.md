@@ -22,5 +22,5 @@ Fun Diet AI adalah aplikasi berbasis Knowledge-Based System (KBS) untuk memberik
 - Streamlit
 - Rule-Based System (KBS)
 
-## Cara menjalankan
+## Boleh dicoba yaa :) !!
 https://diet-berbasis-kbs.streamlit.app/
