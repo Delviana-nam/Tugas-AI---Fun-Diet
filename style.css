@@ -1,0 +1,262 @@
+:root {
+    --cream-main: #efe4d6;
+    --cream-soft: #f8f1e8;
+    --cream-card: #fcf7f1;
+    --brown-main: #8b6f5a;
+    --brown-soft: #b89b84;
+    --brown-text: #5f4b3e;
+    --brown-border: #d8c8b7;
+    --pink-soft: #f1dfd9;
+    --green-soft: #e2e8d7;
+    --blue-soft: #dfe9ef;
+    --yellow-soft: #f3e6c8;
+}
+
+html, body {
+    background-color: var(--cream-main) !important;
+}
+
+[data-testid="stAppViewContainer"] {
+    background: linear-gradient(135deg, #efe4d6, #f4ece2) !important;
+}
+
+[data-testid="stHeader"] {
+    background-color: var(--cream-main) !important;
+}
+
+[data-testid="stToolbar"] {
+    background-color: var(--cream-main) !important;
+}
+
+.block-container {
+    max-width: 1120px;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+h1, h2, h3, h4, p, label, li, span, div {
+    color: var(--brown-text) !important;
+}
+
+.hero-box {
+    background: linear-gradient(90deg, #f6e7d8, #eadccc, #d8c6b2);
+    border: 1px solid var(--brown-border);
+    border-radius: 26px;
+    padding: 26px 28px;
+    margin-bottom: 22px;
+    box-shadow: 0 10px 24px rgba(95, 75, 62, 0.08);
+}
+
+.hero-title {
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: var(--brown-text);
+    margin-bottom: 4px;
+}
+
+.hero-subtitle {
+    font-size: 1.05rem;
+    color: #745e4f;
+}
+
+.custom-card {
+    background: var(--cream-card);
+    border: 1px solid var(--brown-border);
+    border-radius: 22px;
+    padding: 22px 20px;
+    box-shadow: 0 6px 14px rgba(95, 75, 62, 0.05);
+    min-height: 126px;
+}
+
+.card-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #8f7767;
+    margin-bottom: 10px;
+}
+
+.card-value {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--brown-text);
+    line-height: 1.1;
+}
+
+.card-subtitle {
+    margin-top: 8px;
+    font-size: 0.92rem;
+    color: #8a7565;
+}
+
+.panel {
+    border-radius: 22px;
+    padding: 18px 20px;
+    border: 1px solid var(--brown-border);
+    box-shadow: 0 6px 14px rgba(95, 75, 62, 0.04);
+    margin-bottom: 8px;
+    background-color: var(--cream-card);
+}
+
+.panel-title {
+    font-size: 1.08rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--brown-text);
+}
+
+.panel-pink {
+    background-color: var(--pink-soft);
+}
+
+.panel-blue {
+    background-color: var(--blue-soft);
+}
+
+.panel-green {
+    background-color: var(--green-soft);
+}
+
+.panel-yellow {
+    background-color: var(--yellow-soft);
+}
+
+.mini-card {
+    background: var(--cream-card);
+    border: 1px solid var(--brown-border);
+    border-radius: 18px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(95, 75, 62, 0.04);
+}
+
+.mini-title {
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: var(--brown-text);
+}
+
+.mini-value {
+    color: #876f5f;
+    font-size: 0.95rem;
+}
+
+.stTextInput input,
+.stNumberInput input {
+    background-color: #fffaf5 !important;
+    color: var(--brown-text) !important;
+    border: 2px solid #d9cabb !important;
+    border-radius: 16px !important;
+    padding: 0.75rem !important;
+}
+
+/* TEXT DI DALAM SELECT (yang tampil di kotak) */
+.stSelectbox > div > div {
+    background-color: #fffaf5 !important;
+    color: #5f4b3e !important; /* COKLAT → biar kebaca */
+    border: 2px solid #d9cabb !important;
+    border-radius: 16px !important;
+}
+
+/* TEXT DI DROPDOWN MENU */
+div[role="listbox"] {
+    background-color: #6f5b4d !important;
+    border: 1px solid #d8c8b7 !important;
+}
+
+div[role="option"] {
+    color: #fffaf5 !important; /* cream */
+    background-color: #6f5b4d !important;
+}
+
+/* HOVER */
+div[role="option"]:hover {
+    background-color: #8b6f5a !important;
+    color: #fffaf5 !important;
+}
+
+.stButton > button {
+    width: 100%;
+    border-radius: 18px !important;
+    height: 52px;
+    background: linear-gradient(90deg, #d7c2ae, #c8ab91) !important;
+    color: #fffaf5 !important;
+    font-weight: 700 !important;
+    border: none !important;
+    box-shadow: 0 6px 16px rgba(95, 75, 62, 0.10) !important;
+}
+
+.stButton > button * {
+    color: #fffaf5 !important;
+}
+
+.stButton > button:hover {
+    background: linear-gradient(90deg, #c9ad94, #b99577) !important;
+    color: #fffaf5 !important;
+}
+
+.stAlert {
+    border-radius: 18px !important;
+    background-color: #fffaf5 !important;
+    border: 1px solid var(--brown-border) !important;
+}
+
+[data-testid="stProgressBar"] > div > div > div {
+    background: linear-gradient(90deg, #d7c2ae, #c8ab91) !important;
+}
+
+section[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #efe5d8, #eadccc) !important;
+    border-right: 1px solid var(--brown-border);
+}
+
+section[data-testid="stSidebar"] .stRadio > label {
+    font-weight: 700 !important;
+}
+
+div[role="radiogroup"] {
+    gap: 10px !important;
+}
+
+div[role="radiogroup"] label {
+    background: #fffaf5 !important;
+    border: 1px solid var(--brown-border) !important;
+    border-radius: 999px !important;
+    padding: 10px 18px !important;
+    color: var(--brown-text) !important;
+    font-weight: 600 !important;
+}
+
+div[role="radiogroup"] label:hover {
+    background: #f2e6d8 !important;
+}
+
+div[role="radiogroup"] label[data-checked="true"] {
+    background: linear-gradient(90deg, #d7c2ae, #c8ab91) !important;
+    color: #fffaf5 !important;
+    border: 1px solid #c0a389 !important;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddcfbf;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+[data-testid="stMetric"] {
+    background-color: #fffaf5 !important;
+    border: 1px solid var(--brown-border) !important;
+    padding: 18px !important;
+    border-radius: 20px !important;
+    box-shadow: 0 6px 14px rgba(95, 75, 62, 0.05) !important;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .card-value {
+        font-size: 1.6rem;
+    }
+}
